@@ -22,7 +22,7 @@ $file = fopen("test.txt", "r");
 
 while (! feof($file)){
     $line = fgets($file);
-    echo $line . "<br>";
+    echo ($line . "<br>");
 }
 
 fclose($file);
