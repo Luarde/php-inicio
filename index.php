@@ -18,6 +18,13 @@ echo("<li>" . $alunos[1] . "</li>");
 echo("<li>" . $alunos[2] . "</li>");
 echo("</ul>");
 
+$file = fopen("test.txt", "r");
 
+while (! feof($file)){
+    $line = fgets($file);
+    echo $line . "<br>";
+}
+
+fclose($file);
 
 ?>
